@@ -20,3 +20,10 @@ cp -r ..//.pip-modules/lib/python3.8/site-packages/allauth/templates/* ./templat
 
 python3 manage.py loaddata ctegories
 python3 manage.py loaddata products
+
+python3 manage.py makemigrations --dry-run
+python3 manage.py makemigrations
+
+python3 manage.py migrate --plan
+python3 manage.py migrate
+
