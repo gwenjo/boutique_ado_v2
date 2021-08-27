@@ -27,3 +27,7 @@ python3 manage.py makemigrations
 python3 manage.py migrate --plan
 python3 manage.py migrate
 
+export STRIPE_PUBLIC_KEY=pk_test_51JIHDOAae3eclnd3VlRgz2n3eYQqHen1CaCArxIWqOXRufHKNQ6Q9oMaaebUIMig2e7s3eHgaDjrsutCip5EPA0G00EsoG9jVy
+
+export STRIPE_SECRET_KEY=sk_test_51JIHDOAae3eclnd3ojC0IlDBgb3equmNplZxmqup9Sds8rGjlmswL67TACMMnM9UcamHjTYcPyQVh6oFZWZ8fSpp00mB0Fmebi
+
