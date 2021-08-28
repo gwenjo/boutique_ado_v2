@@ -12,6 +12,7 @@ python3 -m http.server
 
 python3 manage.py runserver
 
+python3 manage.py startapp 
 
 pip3 freeze > requirements.txt
 
