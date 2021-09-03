@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'KePOOj/QpaVt7aPkdtmzsM/ChD6JUaMObRsOVfpE')
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
@@ -179,8 +179,8 @@ if 'USE_AWS' in os.environ:
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'ghcjo-boutique-ado'
     AWS_S3_REGION_NAME = 'eu-west-3'
-    AWS_ACCESS_KEY_ID = os.environ.get('AKIATFHQ7FSSHBFAJIHA')
-    AWS_SECRET_ACCESS_KEY = os.environ.get('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')
+    AWS_ACCESS_KEY_ID = os.environ.get('')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
     # Static and media files
